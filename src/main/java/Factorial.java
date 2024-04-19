@@ -6,7 +6,6 @@ public class Factorial {
     }
 
     public int getResult() {
-//        6! = 6 * 5 * 4 * 3 * 2 * 1
         if (this.number < 0) {
             throw new IllegalArgumentException();
         }

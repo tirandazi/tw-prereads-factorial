@@ -20,12 +20,12 @@ public class FactorialTest {
     @Test
     void shouldThrowException() {
         Factorial factorial = new Factorial(-5);
-        assertThrowsExactly(IllegalArgumentException.class, () -> factorial.getResult());
+        assertThrowsExactly(IllegalArgumentException.class, factorial::getResult);
     }
 
     @Test
     void shouldNotThrowException() {
         Factorial factorial = new Factorial(50);
-        assertDoesNotThrow(() -> factorial.getResult());
+        assertDoesNotThrow(factorial::getResult);
     }
 }
